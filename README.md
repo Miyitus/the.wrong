@@ -21,7 +21,19 @@ Reboot
 
 *The.Wrong router  is a device designed and engineered to display digital art to everyone nearby with a smart phone or tablet, via WiFi.
 
-###THE WRONG ROUTER config * TODO:
+Hardware Highlights
+
+The Wrong Router v1:
+- Powered by MTK 7628NN 580Mhz SoC
+- 300Mbps high speed
+- Small, light, easy to use
+- The.Wrong Router software pre-installed
+- Increased RAM from 64MB to 128 MB
+- Better Wi-Fi signal with MTK driver
+
+##
+#
+##THE WRONG ROUTER config * TODO:
 
 -Firmware: package and library compilation
 - piratebox-developer > ImageBuilder for gl-mt300n-v2.
@@ -45,16 +57,6 @@ Reboot
 -Interface : CSS, typo and layout
 
 -Template: files organization for display
-
-Hardware Highlights
-
-The Wrong Router v1:
-- Powered by MTK 7628NN 580Mhz SoC
-- 300Mbps high speed
-- Small, light, easy to use
-- The.Wrong Router software pre-installed
-- Increased RAM from 64MB to 128 MB
-- Better Wi-Fi signal with MTK driver
 
 #####################
 
