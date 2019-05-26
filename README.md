@@ -3,11 +3,12 @@
 #THE WRONG ROUTER
 
 SOFTWARE INTRODUCTION
-Firmware: package and library compilation
-Software: files uploads, fix layout, system, router name config, access point
-Interface : CSS, typo and layout
-Template: files organization
-Software testing && debugging
+
+1.Firmware: package and library compilation
+2.Software: files uploads, fix layout, system, router name config, access point
+3.Interface : CSS, typo and layout
+4.Template: files organization
+5.Software testing && debugging
 
 Reboot
 ]
