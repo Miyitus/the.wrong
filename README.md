@@ -22,10 +22,10 @@ Reboot
 
 ###THE WRONG ROUTER config * TODO:
 
-- Firmware: package and library compilation
-piratebox-developer > ImageBuilder for gl-mt300n-v2.
+-Firmware: package and library compilation
+- piratebox-developer > ImageBuilder for gl-mt300n-v2.
 
-- Software: files uploads, fix layout, system, router ssid name config, access point.
+-Software: files uploads, fix layout, system, router ssid name config, access point.
 ////
 - Set default folder for USB  to "the.wrong"
 - Set by default wireless ssid and hostname to "the.wrong"
@@ -33,13 +33,13 @@ piratebox-developer > ImageBuilder for gl-mt300n-v2.
 - Set default USB directory for the content for html template
 - Create bridge - Access point && Reload
 - auto_install
--
  
-Packages:
+-Packages:
 - lighttpd-mod-accesslog
--lighttpd-mod-simple-vhost  
--php5, ...
-//
+- lighttpd-mod-simple-vhost  
+- php5, ...
+
+////
 
 -Interface : CSS, typo and layout
 
@@ -48,12 +48,12 @@ Packages:
 Hardware Highlights
 
 The Wrong Router v1:
-Powered by MTK 7628NN 580Mhz SoC
-300Mbps high speed
-Small, light, easy to use
-The.Wrong Router software pre-installed
-Increased RAM from 64MB to 128 MB
-Better Wi-Fi signal with MTK driver
+- Powered by MTK 7628NN 580Mhz SoC
+- 300Mbps high speed
+- Small, light, easy to use
+- The.Wrong Router software pre-installed
+- Increased RAM from 64MB to 128 MB
+- Better Wi-Fi signal with MTK driver
 
 #####################
 
@@ -66,5 +66,5 @@ Requirements:
 Install:
 
 References:
-The PirateBox project...
+- The PirateBox project...
 
