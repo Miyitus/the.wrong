@@ -7,7 +7,7 @@ SOFTWARE INTRODUCTION
  About the project
 
 *The.Wrong software load the locally-hosted website http://the.wrong/router
-(.jpg, .gif, .mp4, .pdf, .mp3 // html, php, js, css) images and data files will be charger from the USB drive. The project is based on Piratebox. Developed by Matthias Strubel & Miyö Van Stenis
+(.jpg, .gif, .mp4, .pdf, .mp3 // html, php, js, css) images and data files will be charger from the USB drive. The project is based on Piratebox. Developed by Matthias Strubel & Miyö Van Stenis.
 
 *The.Wrong router  is a device designed and engineered to display digital art to everyone nearby with a smart phone or tablet, via WiFi. 
 
