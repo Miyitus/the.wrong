@@ -32,7 +32,7 @@ piratebox-developer > ImageBuilder for gl-mt300n-v2.
 -Change ssid name in USB
 -Set default USB directory for the content for html template
 -Create bridge - Access point && Reload
--auto_install
+- auto_install
 -
  
 Packages:
