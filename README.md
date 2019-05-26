@@ -17,11 +17,11 @@ SOFTWARE INTRODUCTION
 piratebox opt for gl-mt300n-v2
 
 -Software: files uploads, fix layout, system, router ssid name config, access point
-  #  Set default folder for USB  to "the.wrong"
-  #  Set by default wireless ssid and hostname to "the.wrong"
-  #  setup ssid in admin
+Set default folder for USB  to "the.wrong"
+Set by default wireless ssid and hostname to "the.wrong"
+setup ssid in admin
   
-   #  Packages:
+Packages:
 
 
 
