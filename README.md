@@ -14,8 +14,11 @@ SOFTWARE INTRODUCTION
 ###THE WRONG ROUTER config * TODO:
 
 -Firmware: package and library compilation
+
 -Software: files uploads, fix layout, system, router name config, access point
+
 -Interface : CSS, typo and layout
+
 -Template: files organization for display
 
 Hardware Highlights
