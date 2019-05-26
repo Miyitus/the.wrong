@@ -22,16 +22,16 @@ Reboot
 
 ###THE WRONG ROUTER config * TODO:
 
--Firmware: package and library compilation
+- Firmware: package and library compilation
 piratebox-developer > ImageBuilder for gl-mt300n-v2.
 
--Software: files uploads, fix layout, system, router ssid name config, access point.
+- Software: files uploads, fix layout, system, router ssid name config, access point.
 ////
--Set default folder for USB  to "the.wrong"
--Set by default wireless ssid and hostname to "the.wrong"
--Change ssid name in USB
--Set default USB directory for the content for html template
--Create bridge - Access point && Reload
+- Set default folder for USB  to "the.wrong"
+- Set by default wireless ssid and hostname to "the.wrong"
+- Change ssid name in USB
+- Set default USB directory for the content for html template
+- Create bridge - Access point && Reload
 - auto_install
 -
  
