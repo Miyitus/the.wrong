@@ -3,6 +3,15 @@
 #THE WRONG ROUTER 
 
 SOFTWARE INTRODUCTION
+Firmware: package and library compilation
+Software: files uploads, fix layout, system, router name config, access point
+Interface : CSS, typo and layout
+Template: files organization
+Software testing && debugging
+
+Reboot
+]
+
 
  About the project
 
@@ -14,17 +23,23 @@ SOFTWARE INTRODUCTION
 ###THE WRONG ROUTER config * TODO:
 
 -Firmware: package and library compilation
-piratebox opt for gl-mt300n-v2
+piratebox-developer > ImageBuilder for gl-mt300n-v2.
 
--Software: files uploads, fix layout, system, router ssid name config, access point
-Set default folder for USB  to "the.wrong"
-Set by default wireless ssid and hostname to "the.wrong"
-setup ssid in admin
-  
+-Software: files uploads, fix layout, system, router ssid name config, access point.
+////
+-Set default folder for USB  to "the.wrong"
+-Set by default wireless ssid and hostname to "the.wrong"
+-Change ssid name in USB 
+-Set default USB directory for the content for html template
+-Create bridge - Access point && Reload 
+-auto_install 
+-
+ 
 Packages:
-
-
-
+- lighttpd-mod-accesslog
+-lighttpd-mod-simple-vhost  
+-php5, ...
+//
 
 -Interface : CSS, typo and layout
 
