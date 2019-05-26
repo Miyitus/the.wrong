@@ -1,7 +1,5 @@
 # the.wrong Router v1
 
-#THE WRONG ROUTER
-
 SOFTWARE INTRODUCTION
 
 - Firmware: package and library compilation
@@ -30,8 +28,6 @@ The Wrong Router v1:
 - The.Wrong Router software pre-installed
 - Increased RAM from 64MB to 128 MB
 - Better Wi-Fi signal with MTK driver
-
-##
 #
 ##THE WRONG ROUTER config * TODO:
 
