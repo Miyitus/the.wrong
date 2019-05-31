@@ -1,0 +1,5 @@
+45c45,46
+< include "/opt/piratebox/conf/lighttpd/dirlisting-html.conf"
+---
+> #include "/opt/piratebox/conf/lighttpd/dirlisting-html.conf"
+> include "/opt/piratebox/conf/lighttpd/simple-dirlisting.conf"
