@@ -65,7 +65,7 @@ function do_dynamic_content(){
 
 }
 
-add_folders="PirateBox"
+add_folders="the.wrong"
 function do_handle_additional_folders(){
    local src_folder=$1; shift
    local tmp_folder=$1; shift
