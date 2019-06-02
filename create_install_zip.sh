@@ -65,6 +65,23 @@ function do_dynamic_content(){
 
 }
 
+add_folders="PirateBox"
+function do_handle_additional_folders(){
+   local src_folder=$1; shift
+   local tmp_folder=$1; shift
+
+   echo "Adding additional folders"
+   for folder in $add_folders ; do 
+      echo "$folder ... "
+      test -d "$tmp_folder/$folder" && \
+                rm -r "${tmp_folder:?}/${folder}"
+      cp -r "$src_folder/$folder" "$tmp_folder"
+   done
+
+
+}
+
+
 function do_image_file(){
     local img_file=$1 ; shift
     local tmp_folder=$1 ;shift
@@ -116,6 +133,7 @@ function do_install_zip(){
     local tmp_folder=$1 ;shift
     local src_customization=$1; shift
     local src_patches=$1; shift
+    local src_additional=$1 ; shift
     local dst_zip_name=$1; shift
 
     if ! test -f "$src_zip" ; then
@@ -141,9 +159,16 @@ function do_install_zip(){
                   "$src_customization" \
                   "$src_patches" 
 
+
+    do_handle_additional_folders "$src_additional" "$tmp_folder" 
+
     echo "Zip into $dst_zip_name"
     cd "$tmp_folder"
     zip -r9 "$dst_zip_name" "./install" 
+
+    for folder in $add_folders ; do
+	zip -r9 "$dst_zip_name" "./${folder}"
+    done
  
 }
 
@@ -156,5 +181,6 @@ do_install_zip   "./install_piratebox.zip"  \
                  "./tmp_zip" \
                  "./customization" \
                  "./patches" \
-                 "./install_the.wrong.zip"
+                 "./additional_folders" \
+                 "${work_path:?}/install_the.wrong.zip"
 
