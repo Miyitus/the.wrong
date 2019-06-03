@@ -18,6 +18,6 @@ fi
 echo "------------------ Running $0 ------------------"
 
 echo "Switching hostname to the.wrong.lan"
-/opt/piratebox/bin/install_piratebox.sh hostname $(hostname)
+/opt/piratebox/bin/install_piratebox.sh hostname "$HOST"
 
-
+ 
