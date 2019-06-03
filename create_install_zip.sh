@@ -127,6 +127,10 @@ function do_image_file(){
 
     echo "Umounting img file"
     perform_sudo_command umount "$img_mount"
+
+    echo "Taring image file again"
+    cd "${tmp_folder}"
+    tar cvzf "$img_file" $BASE_IMAGE_EXTR
 }
 
 function do_install_zip(){
@@ -178,10 +182,10 @@ function do_install_zip(){
 
 
 
-do_install_zip   "./install_piratebox.zip"  \
-                 "./tmp_zip" \
-                 "./customization" \
-                 "./patches" \
-                 "./additional_folders" \
+do_install_zip   "${work_path:?}/install_piratebox.zip"  \
+                 "${work_path:?}/tmp_zip" \
+                 "${work_path:?}/customization" \
+                 "${work_path:?}/patches" \
+                 "${work_path:?}/additional_folders" \
                  "${work_path:?}/install_the.wrong-complete.zip"
 
