@@ -23,6 +23,7 @@ fi
 echo "------------------ Running $0 ------------------"
 
 pbx_cfg="/etc/piratebox.config"
+
 echo "Backup $pbx_cfg"
 cp -v "$pbx_cfg" "${pbx_cfg}.backup"
 echo "Adjusting target directory in $pbx_cfg"
@@ -33,6 +34,9 @@ sed -i -e 's|pb_wireless_ssid="PirateBox - Share Freely"|pb_wireless_ssid="The.W
 
 echo "Adjusting default hostname in $pbx_cfg"
 sed -i -e 's|pb_hostname="piratebox.lan"|pb_hostname="the.wrong.lan"|' "$pbx_cfg"
+uci set "system.@system[0].hostname=the.wrong.lan"
 
 echo "Disabling random hostname generation in $pbx_cfg"
 sed -i -e 's|pb_inst_flag_mesh="/etc/init.d/mesh"|pb_inst_flag_mesh="/foobar.do.not.activate"|' "$pbx_cfg" 
+
+. "$pbx_cfg"
