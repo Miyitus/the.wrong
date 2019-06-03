@@ -1,0 +1,24 @@
+67c67
+< HOST="piratebox.lan"
+---
+> HOST="the.wrong.lan"
+120c120
+< DROOPY_ENABLED="yes"
+---
+> DROOPY_ENABLED="no"
+147c147
+< RESET_CHAT="yes"
+---
+> RESET_CHAT="no"
+153c153
+< SHOUTBOX_ENABLED="yes"
+---
+> SHOUTBOX_ENABLED="no"
+161c161
+< CUSTOM_DIRLIST_COPY="yes"
+---
+> CUSTOM_DIRLIST_COPY="no"
+164c164
+< PBX_JSON_GENERATION="yes"
+---
+> PBX_JSON_GENERATION="no"

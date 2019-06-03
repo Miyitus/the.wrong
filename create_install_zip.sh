@@ -46,6 +46,7 @@ function do_changes(){
    echo "Doing adjustments in default configuration"
 
    perform_sudo_command patch -t -i "${patches}/lighttpd.conf.1.patch" "${pbx}/conf/lighttpd/lighttpd.conf"
+   perform_sudo_command patch -t -i "${patches}/piratebox.conf.1.patch" "${pbx}/conf/piratebox.conf"
 
    echo "NOTHING HERE CURRENTLY"
 
@@ -182,5 +183,5 @@ do_install_zip   "./install_piratebox.zip"  \
                  "./customization" \
                  "./patches" \
                  "./additional_folders" \
-                 "${work_path:?}/install_the.wrong.zip"
+                 "${work_path:?}/install_the.wrong-complete.zip"
 
