@@ -67,7 +67,7 @@ function do_dynamic_content(){
 
 }
 
-add_folders="the.wrong"
+add_folders="the.wrong auto_flash git.info"
 function do_handle_additional_folders(){
    local src_folder=$1; shift
    local tmp_folder=$1; shift
@@ -77,7 +77,8 @@ function do_handle_additional_folders(){
       echo "$folder ... "
       test -d "$tmp_folder/$folder" && \
                 rm -r "${tmp_folder:?}/${folder}"
-      cp -r "$src_folder/$folder" "$tmp_folder"
+      test -d "$src_folder/$folder" && \
+		cp -r "$src_folder/$folder" "$tmp_folder"
    done
 
 
