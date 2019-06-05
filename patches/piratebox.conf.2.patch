@@ -1,0 +1,4 @@
+23c23
+< WWW_CONTENT="/opt/piratebox/share/content"
+---
+> WWW_CONTENT="/mnt/usb/the.wrong/content"
