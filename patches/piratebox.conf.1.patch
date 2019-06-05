@@ -1,7 +1,7 @@
 67c67
 < HOST="piratebox.lan"
 ---
-> HOST="the.wrong.lan"
+> HOST="the.wrong"
 120c120
 < DROOPY_ENABLED="yes"
 ---

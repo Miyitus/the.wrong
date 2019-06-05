@@ -17,7 +17,7 @@ fi
 # You can uncommend this line to see when hook is starting:
 echo "------------------ Running $0 ------------------"
 
-echo "Switching hostname to the.wrong.lan"
+echo "Switching hostname to $HOST"
 /opt/piratebox/bin/install_piratebox.sh hostname "$HOST"
 
  

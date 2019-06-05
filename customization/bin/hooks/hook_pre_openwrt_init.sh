@@ -35,7 +35,7 @@ echo "Backup $pbx_cfg"
 . $ext_linktarget/usr/share/piratebox/piratebox.common
 
 
-uci set "system.@system[0].hostname=the.wrong.lan"
+uci set "system.@system[0].hostname=the.wrong"
 
 # AP Client Isolation
 uci set wireless.@wifi-iface[0].isolate='1'
