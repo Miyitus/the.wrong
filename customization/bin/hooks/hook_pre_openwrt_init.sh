@@ -40,6 +40,10 @@ uci set "system.@system[0].hostname=the.wrong"
 # AP Client Isolation
 uci set wireless.@wifi-iface[0].isolate='1'
 
+# Redirect all incoming port 80 requests
+fw_redirect_entry=$(uci show firewall | grep 'http_pbx'  | cut -d '.' -f 2)
+uci set firewall."$fw_redirect_entry".enabled='1'
+
 pb_setSSID "The.Wrong"
 uci commit
 
