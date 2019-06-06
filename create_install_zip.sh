@@ -184,7 +184,7 @@ function do_install_zip(){
 
 
 
-do_install_zip   "${work_path:?}/install_piratebox.zip"  \
+do_install_zip   "${work_path:?}/install_thewrong.zip"  \
                  "${work_path:?}/tmp_zip" \
                  "${work_path:?}/customization" \
                  "${work_path:?}/patches" \
