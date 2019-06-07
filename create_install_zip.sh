@@ -181,7 +181,7 @@ function do_install_zip(){
 
 
 
-
+test -e "${work_path:?}/tmp_zip" && rm -r "${work_path:?}/tmp_zip" 
 
 
 do_install_zip   "${work_path:?}/install_thewrong.zip"  \
