@@ -21,7 +21,11 @@ echo "Switching hostname to $HOST"
 /opt/piratebox/bin/install_piratebox.sh hostname "$HOST"
 
 echo "Enabling Auto-Configuration via TXT files"
-cd /opt/autocfg/modules.enabled 
+cd /opt/autocfg/modules.enabled
+
+# Remove existing configuration (in case of an upgrade)
+rm -v ./* 2> /dev/null
+
 ln -s ../modules.available/12_openwrt_channel.sh .
 ln -s ../modules.available/10_openwrt_ssid.sh  .
 ln -s ../modules.available/11_openwrt_txpower.sh   .
