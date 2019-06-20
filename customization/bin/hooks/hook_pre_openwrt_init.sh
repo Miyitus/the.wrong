@@ -47,3 +47,13 @@ uci set firewall."$fw_redirect_entry".enabled='1'
 pb_setSSID "The.Wrong"
 uci commit
 
+
+if ! grep -q 'contentuser' /etc/passwd ; then 
+	uid=500
+	gid=$( grep nogroup /etc/group  | cut -d ':' -f 3 )
+	if grep -q -e "$uid" /etc/passwd; then
+		uid=601
+	fi
+	echo "contentuser:x:${uid}:${gid}:Content Admin:/opt/piratebox/share:/bin/ash" \
+		>> /etc/passwd
+fi
