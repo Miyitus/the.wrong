@@ -12,482 +12,164 @@
                                              release 1.0
                                              2019
 
-                                         */
+coded with <3 by MVS - miyovanstenis.com */
+
+/*GENRAL CONFIGURATIONS*/
+
+img{
+  padding: none;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  border: none;}
+
+/* Config for Mobile Styles */
+@media only screen and (max-width: 400px) {
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 7vw;}}
+
+/*VIDEO SETTINGS*/
+
+.embed-video {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  padding-bottom: 56.25%;}
+
+.embed-video iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
+
+.embed-netart {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  padding-bottom: 56.25%;}
+
+.embed-netart iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 5vw;}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 3vw;}}
+
+
+body {
+  font-family: 'SpaceMono-Regular';
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;}
+
+/*Layout*/
+div {
+  font-family: 'SpaceMono-Regular';
+  font-size: 3vw;  
+  background: none;
+  border: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;}
+
+div.tw {
+	font-family: 'IconFont','SpaceMono-Regular';
+  text-align: justify;}
+div.dsc {
+	margin-right: 18%; 
+	margin-left: 18%; 
+	width: 64%; 
+	float: center;}
+
 
 /*FONTS*/
 
-
-
+/*Menu Icon*/
 @font-face {
   font-family: 'IconFont';
   font-style: normal;
-  font-weight: 400;
-  src: url(fonts/IconFont-Regular-0.9.woff) format('woff');
-}
+  src: url(fonts/IconFont-Regular-0.9.woff) format('woff');}
 
+/*<p> & <br> Description Font*/
 @font-face {
   font-family: 'SpaceMono-Regular';
   font-style: normal;
-  font-weight: 400;
-  src: url(fonts/SpaceMono-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Space Mono';
-  font-style: bold;
-  font-weight: normal;
-  src: url(fonts/SpaceMono-Bold.ttf) format('truetype');
- }
-
-
-
-}
-body {
-	background-color: #fff;
-	color: #000;
-    width: 100%;
-  height: 100%;
-   padding: 0px;
- margin: 0px;
-
-}
-div {
-  font-family: 'SpaceMono-Regular';
-  font-size: 30px;
-  text-align: justify;
-  background: none;
-  border: 0;
-margin-bottom: 0px;
-margin-top: 0px;
-  width: 100%;
-  height: 100%;
-}
-img, a {
-
-  padding: none;
-   margin: 0px;
-  width: 100%;
-  height: auto;
-}
- video {
-
-  width: 100% !important;
-  height: auto !important;
-} 
-
-
-
-small {
-  font-family:'Space Mono';
-  font-style: bold;
-  font-weight: 400;}
-
+  src: url(fonts/SpaceMono-Regular.ttf) format('truetype');}
 p {
   font-family:'SpaceMono-Regular';
   font-style: normal;
-    font-weight: 400;}
+  font-size: 3vw;
+  text-align: justify;}
+ br {
+  font-family:'SpaceMono-Regular';
+  font-style: normal;
+  font-size: 1.5vw;}
 
+/*<small> & <strong> Title 1 Font*/
+@font-face {
+  font-family: 'Space Mono';
+  font-style: bold;
+  src: url(fonts/SpaceMono-Bold.ttf) format('truetype');}
+small {
+  font-family:'Space Mono';
+  font-style: bold;
+  font-size: 3vw;}
+strong {
+  font-family:'Space Mono';
+  font-style: bold;
+  font-size: 3.5vw;}
+
+/*<h2> Subtitles Font*/
+@font-face {
+  font-family: 'SpaceMono-Italic';
+  font-style: bold;
+  src: url(fonts/SpaceMono-Italic.ttf) format('truetype');}
+
+h2 {
+  font-style: italic;
+  font-family: 'SpaceMono-Italic';
+  font-size: 2vw;}
+
+
+
+
+/*lINKS*/
+
+a {
+  padding: none;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  border: none;}
 
 a:active {
-	opacity: 0.7;
-}
-
-.page a.active {
-	opacity: 0.4;
-}
-
-i,
-em {
-	font-style: italic;
-}
-
-b,
-strong {
-	font-weight: bold;
-}
-
-sub,
-sup {
-	position: relative;
-	vertical-align: baseline;
-}
-
-sub {
-	top: 0.3em;
-}
-
-sup {
-	top: -0.4em;
-}
-
-s {
-	text-decoration: line-through;
-}
-
-
-
-ul,
-ol {
-	margin: 0;
-	padding: 0 0 0 1em;
-}
-
-blockquote {
-	margin: 0;
-	padding: 0 0 0 2em;
-}
-
-hr {
-	background: rgba(127, 127, 127, 0.2);
-	border: 0;
-	height: 1px;
-	display: block;
-}
-
-.content img {
-	float: none;
-	margin-bottom: .5em;
-}
-
-.gallery_image_caption {
-    margin-top: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-	line-height: 1.3;
-	font-family: 'Neue Haas Grotesk', Icons /*!Persona*/;
-	font-style: normal;
-	font-weight: 400;
-	color: rgba(41, 41, 41, 0.3);
-}
-
-
-
-
-
-
-[data-predefined-style="true"] bodycopy {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.9);
-  font-family: "Space Mono", Icons /*!Google*/;
-  font-style: normal;
-  line-height: 1.4;
-    letter-spacing: 0.1em;
-}
-
-[data-predefined-style="true"] bodycopy a {
-  color: rgba(0, 0, 255, 0.9);
-  padding-bottom: 0.1em;
-  border-bottom: 0px solid rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-}
-
-[data-predefined-style="true"] bodycopy a:hover {
-
-}
-
-bodycopy a.image-link,
-bodycopy a.icon-link,
-bodycopy a.image-link:hover,
-bodycopy a.icon-link:hover {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-[data-predefined-style="true"] h1 {
-  font-family: "Space Grotesk", Icons /*!Persona*/;
-  font-style: normal;
-  font-weight: 300;
-  padding: 0;
-  margin: 0;
-  font-size: 1.6rem;
-  line-height: 1.3;
-  color: rgba(0, 0, 0, 0.9);
-    letter-spacing: 0.05em;
-  text-rendering: optimizeLegibility;
-}
-
-[data-predefined-style="true"] h1 a {
-  color: rgba(0, 0, 255, 0.9);
-    border-bottom: 0px solid rgb(41, 41, 41);
-}
-
-[data-predefined-style="true"] h2 {
-  font-family: 'Times New Roman', 'Times New Roman', Times, serif, 'Times New Roman', Icons /*!System*/;
-  font-style: normal;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 2.2rem;
-  line-height: 1.3;
-  text-rendering: optimizeLegibility;
-}
-
-[data-predefined-style="true"] h2 a {
-  color: rgba(0, 0, 0, 0.9);
-    border-bottom: 1px solid rgb(41, 41, 41);
-}
-
-[data-predefined-style="true"] small {
-  display: inline-block;
-  font-size: 1.4rem;
-  line-height: 1.3;
-  font-family: "Space Grotesk", Icons /*!Persona*/;
-  font-style: normal;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-[data-predefined-style="true"] small a {
-  color: rgba(0, 0, 255, 0.9);
-  border-bottom-width: 0em;
-}
-
-/**
- * Breakpoints
- */
-
-
-[data-css-preset] .page {
-    background-color: initial /*!page_bgcolor*/;
-}
-
-.mobile .page,
-[data-css-preset].mobile .page {
-  position: relative;
-  min-height: 10px;
-  max-width: 100%;
-  width: 100%;
-  background-color: transparent /*!page_bgcolor*/;
-}
-
-[data-css-preset] .container {
-  margin-left: 0 /*!content_left*/;
-  margin-right: auto /*!content_left*/;
-  text-align: left /*!text_left*/;
-}
-
-[data-css-preset] body {
-  background-color: transparent/*!body_bgcolor*/;
-}
-
-[data-css-preset] .container_width {
-  width: 100%/*!content_left*/;
-}
-
-[data-css-preset] .content_padding {
-  padding-top: 1.2rem /*!main_margin*/;
-  padding-bottom: 1.2rem /*!main_margin*/;
-  padding-left: 1.2rem /*!main_margin*/;
-  padding-right: 1.2rem /*!main_margin*/;
-}
-
-
-[data-css-preset] text-limit {
-  display: inline-block /*!text_width*/;
-  max-width: 66rem/*!text_width*/;
-}
-
-
-
-/**
- * Thumbnails
- */
-
-div[thumbnails] {
-  justify-content: flex-start;
-}
-
-[data-css-preset] .thumbnails {
-    background-color: transparent/*!thumbnails_bgcolor*/;   
-}
-
-[data-css-preset] .thumbnails_width {
-    width: 100%/*!thumbnails_width*/;
-}
-
-[data-css-preset] [thumbnails-pad] {
-    padding: 0.6rem/*!thumbnails_padding*/;
-}
-
-[data-css-preset] [thumbnails-gutter] {
-    margin: -1.2rem/*!thumbnails_padding*/;
-}
-
-[data-css-preset] [responsive-layout] [thumbnails-pad] {
-    padding: 0.6rem/*!responsive_thumbnails_padding*/; 
-}
-
-[data-css-preset] [responsive-layout] [thumbnails-gutter] {
-    margin: -1.2rem/*!responsive_thumbnails_padding*/; 
-}
-
-.thumbnails .thumb_image {
-  outline: 0px solid rgba(0,0,0,.12);
-    outline-offset: -1px;
-    position: relative;
-}
-
-.thumbnails .title {
-    margin-top: 1.2rem;
-    margin-bottom: 0.1rem;
-    font-size: 2.2rem;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.9);
-  font-family: 'Neue Haas Grotesk', Icons /*!Persona*/;
-  font-style: normal;
-  line-height: 1.3;
-}
-
-
-.thumbnails .tags {
-    margin-top: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-  line-height: 1.3;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.35);
-  font-family: 'Neue Haas Grotesk', Icons /*!Persona*/;
-  font-style: normal;
-}
-
-.thumbnails .tags a {
-  border-bottom: 0;
-    color: rgba(0, 0, 0, 0.35);
-    text-decoration: none;
-}
-
-.thumbnails .has_title .tags {
-  margin-top: 1.2rem;
-}
-
-/**
- * Thumbnail Hover
- */
-
-.thumbnails .thumbnail > a {
-  position: relative;
-}
-
-.thumbnails .thumbnail .title {
-  background: rgba(0, 0, 0, 0.4);
-    padding: 0.5rem 1.2rem 0.7rem 1.2rem;
-    margin: 2.4rem;
-    color: rgba(255, 255, 255, 1);
-    align-content: center;
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.thumbnails .title span {
-  margin: auto;
-  display: inline-block;
-}
-
-.thumbnails .thumbnail:hover .title {
-    opacity: 1;
-}
-
-body.mobile .thumbnails .thumbnail:hover .title {
-  opacity: 0;
-}
-
-/**
- * Site Menu
- */
-
-[data-css-preset] #site_menu_button {
-    color: rgba(0, 0, 0, 0.9);
-    line-height: 1;
-    font-size: 38px /*!site_menu_button*/;
-    padding: 3px;
-    line-height: 1;
-    background: rgba(255, 255, 255, 0);
-    position: fixed;
-  right: 0.5rem /*!site_menu_button*/;
-  top: 0.5rem /*!site_menu_button*/;
-}
-
-body.mobile #site_menu_button {
-  margin: auto;
-    font-size: 44px;
-}
-
-#site_menu_button.custom_icon {
-  width: 40px;
-    height: auto;
-}
-
-#site_menu_button.active {
-  display: none;
-}
-
-/**
- * Site Menu
- */
-
-#site_menu {
-  font-family: "Neue Haas Grotesk", Icons /*!Persona*/;
-  background: rgba(225, 225, 225, 0.98);
-  font-size: 24px;
-  font-style: normal;
-  padding: 65px 30px 90px 35px;
-  max-width: 400px;
-  min-width: 300px;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-}
-
-body.mobile #site_menu {
-  width: 100%;
-}
-
-#site_menu .page-link a {
-  color: rgba(0, 0, 0, 1);
-}
-
-#site_menu .set-link > a {
-  color: rgba(255, 255, 255, 1);
-  font-weight: bold;
-}
-
-#site_menu a:active {
-  opacity: .7;
-}
-
-#site_menu a.active {
-  opacity: .4;
-}
-
-#site_menu .close {
-  display: none;
-  color: rgba(122, 122, 122, 1);
-  line-height: .85em;
-  font-size: 46px;
-}
-
-body.mobile #site_menu .close {
-  display: block;
-  font-size: 55px;
-  line-height: 1.3em;
-}
-
-#site_menu .break {
-  height: 28px;
-}
-
-#site_menu .indent {
-  margin-left: 28px;
-}
-
-
-
-
-
+	opacity: 0.7;}
 
