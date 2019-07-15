@@ -173,6 +173,7 @@ function do_install_zip(){
 
     echo "Zip into $dst_zip_name"
     cd "$tmp_folder"
+    test -e "$dst_zip_name" && rm -v "$dst_zip_name"
     zip -r9 "$dst_zip_name" "./install" 
 
     for folder in $add_folders ; do
