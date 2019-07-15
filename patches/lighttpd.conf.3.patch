@@ -1,0 +1,11 @@
+--- /home/matze/git/the.wrong/tmp_zip/mount/conf/lighttpd/lighttpd.conf	2019-07-15 21:45:37.000000000 +0200
++++ /tmp/lighttpd.conf	2019-07-15 21:46:26.797290163 +0200
+@@ -84,7 +84,7 @@
+ 
+ ## Uncommenting the following line enables PHP for the 
+ ## complete PirateBox
+-#include "/opt/piratebox/conf/lighttpd/fastcgi-php.conf"
++include "/opt/piratebox/conf/lighttpd/fastcgi-php.conf"
+ #
+ 
+ include "/opt/piratebox/conf/lighttpd/accesslog.conf"
