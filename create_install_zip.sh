@@ -55,7 +55,7 @@ function do_changes(){
    perform_sudo_command patch -t -i "${patches}/piratebox.conf.3.patch" "${pbx}/conf/piratebox.conf"
 
    perform_sudo_command patch -t -i "${patches}/captive.func.php.1.patch" "${pbx}/www/captive/captive.func.php"
-   perform_sudo_command patch -t -i "${patches}/captive.func.php.22.patch" "${pbx}/www/captive/captive.func.php"
+   perform_sudo_command patch -t -i "${patches}/captive.func.php.2.patch" "${pbx}/www/captive/captive.func.php"
 
    echo "NOTHING HERE CURRENTLY"
 
