@@ -1,0 +1,11 @@
+--- captive.func.php.tw	2019-07-21 19:35:38.000000000 +0200
++++ captive.func.php.tw2	2019-07-21 19:36:30.000000000 +0200
+@@ -20,7 +20,7 @@
+      'SQLITE_FILE'         =>  "sqlite:/tmp/captive.sqlite" ,
+      'minimum_answers'     => 10 ,
+      'old_triggers_login'  => 0,
+-     'debug'               => 1,
++     'debug'               => 0,
+      'hostname'            => "$hostname",
+ #  captive_info_url => Captive Portal still on, redirect client to this page
+      'captive_info_url_iOS'   => "http://$hostname/captive/auto_login-iOS.html" ,

@@ -1,0 +1,11 @@
+--- piratebox.conf.new	2019-06-05 08:11:15.000000000 +0200
++++ piratebox.conf.new2	2019-07-21 19:33:43.000000000 +0200
+@@ -89,7 +89,7 @@
+ #DHCP LEASE End Range
+ END_LEASE=250
+ #Leasetime  (When should the client renew it's IP)
+-LEASE_DURATION=12h
++LEASE_DURATION=15m
+ 
+ # Where is the leasefile stored to?
+ LEASE_FILE_LOCATION=$PIRATEBOX_FOLDER/tmp/lease.file
