@@ -1,0 +1,11 @@
+--- captive.func.php	2019-07-21 19:32:39.000000000 +0200
++++ captive.func.php.tw	2019-07-21 19:35:38.000000000 +0200
+@@ -27,7 +27,7 @@
+      'captive_info_url'       => "http://$hostname/captive/auto_login.html" ,
+ #  enter_url => The page redirected to after ?enter=1
+      'enter_url_iOS'      => "http://$hostname/content/open_browser.html",
+-     'enter_url'          => "http://$hostname/content/",
++     'enter_url'          => "http://$hostname/content/open_browser.html",
+  );
+ }
+ 

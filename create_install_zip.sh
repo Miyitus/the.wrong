@@ -48,8 +48,14 @@ function do_changes(){
    perform_sudo_command patch -t -i "${patches}/lighttpd.conf.1.patch" "${pbx}/conf/lighttpd/lighttpd.conf"
    perform_sudo_command patch -t -i "${patches}/lighttpd.conf.2.patch" "${pbx}/conf/lighttpd/lighttpd.conf"
    perform_sudo_command patch -t -i "${patches}/lighttpd.conf.3.patch" "${pbx}/conf/lighttpd/lighttpd.conf"
+   
    perform_sudo_command patch -t -i "${patches}/piratebox.conf.1.patch" "${pbx}/conf/piratebox.conf"
    perform_sudo_command patch -t -i "${patches}/piratebox.conf.2.patch" "${pbx}/conf/piratebox.conf"
+   perform_sudo_command patch -t -i "${patches}/piratebox.conf.3.patch" "${pbx}/conf/piratebox.conf"
+   perform_sudo_command patch -t -i "${patches}/piratebox.conf.3.patch" "${pbx}/conf/piratebox.conf"
+
+   perform_sudo_command patch -t -i "${patches}/captive.func.php.1.patch" "${pbx}/www/captive/captive.func.php"
+   perform_sudo_command patch -t -i "${patches}/captive.func.php.22.patch" "${pbx}/www/captive/captive.func.php"
 
    echo "NOTHING HERE CURRENTLY"
 
