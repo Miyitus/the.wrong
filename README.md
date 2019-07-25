@@ -90,7 +90,7 @@ src="img/03/index.html"> you can add an iframe preview here, changing the src di
 
 
 audio
-add an Audio .mp3 format; our default file is called audio04.pm3 you can rename your file to audio04 or you can modify the name of the file. 
+add an Audio .mp3 format; our default file is called audio04.pm3 you can rename your file to audio04 or you can modify the name of the file.
 <div style="float: center"><audio controls> will allow to recominzed your content as a Audio
 <source src="img/04/audio04.mp3" type="audio/mpeg"> change the directory of the file here. keep it simple, export your audio always as mp3 05.html,  06.html, 07.html, 08.html, 09.html, 10.html, are blank pages with our default layout, they’re waiting for your artist content, keep in mind that we create a folder directory for each artist, if you have more than 10 artist just create a new folder add their content link it to their html page, and make sure you add in the index page the link to their work page.
 
@@ -118,8 +118,10 @@ config folder - you will see this folder only after the installation of the soft
 
 hostname - changes the URL of your router. by default it will be “the.wrong” but you can add the name of your pavilion or whatever you want.
 
-ssid.txt - changes the name of the Wi-Fi. 
+ssid.txt - changes the name of the Wi-Fi.
 
 txpower.txt - this is also and advance setting if you don’t know what is for, we strongly recommend you to leave it like that.
 
 channel.txt - change the channel of connection in case you need it, this is also and advance setting if you don’t know what is for, leave it like that.
+
+
