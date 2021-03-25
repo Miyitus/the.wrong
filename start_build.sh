@@ -8,12 +8,15 @@
 # Needs to be place like this:
 #
 #      ./start_build.sh
-#      ./openwrt-dev-environment    (Github Piratebox-dev/openwrt-dev-environment)
+#      ./openwrt-dev-environment    (Github Piratebox-dev/openwrt-dev-environment Development branch)
 #      ./the.wrong                  (Github miyovanstenis/the.wrong)
 #
 #
 #   The script will do a refresh of the both git repositories and then
 #   execute the build process on openwrt-dev-environment.
+#
+#   Before using the script, make sure you are able to complete a complete build process in 
+#   ./openwrt-dev-environment once
 #
 #   After the build is completed, the script copies all needed files together
 #   out of openwrt-dev-environment and triggers the create_install_zip.sh 
